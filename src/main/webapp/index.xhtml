@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+
+<h:body>
+<!--    <h:form id="formLogin">-->
+    <h:form id="formBean">
+<!--        <p:growl id="messages"></p:growl>-->
+<!--        <p:panel id="pnlLogin" header="Login" style="width: 25%">-->
+<!--            <p:panelGrid id="pGridLogin" columns="1" layout="grid">-->
+<!--                <p:outputLabel id="lblUsuario" value="Usuario: " for="@next"></p:outputLabel>-->
+<!--                <p:inputText id="txtUsuario" required="true" requiredMessage="El usuario es obligatorio" style="width: 100%"></p:inputText>-->
+
+<!--                <p:outputLabel id="lblPassword" value="Contraseña: " for="@next"></p:outputLabel>-->
+<!--                <p:password id="txtPassword" required="true" requiredMessage="La contraseña es obligatoria" style="width: 100%"></p:password>-->
+
+<!--                <p:commandButton id="btnEntrar" value="Entrar" update="messages, pGridLogin" style="width: 100%"></p:commandButton>-->
+<!--            </p:panelGrid>-->
+<!--        </p:panel>-->
+
+<!--        <h:outputLabel for="name">-->
+<!--            Como te llamas-->
+<!--        </h:outputLabel>-->
+        <h:inputText id="name" value="#{formBean.name}"/>
+        <br/>
+        <h:commandButton value="Saludar"/>
+<!--        <h:outputText rendered="#{formBean.name!=null}" value="#{formBean.greentings}"/>-->
+        <h:outputText value="#{formBean.greetings}"/>
+    </h:form>
+</h:body>
+</html>
